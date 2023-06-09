@@ -42,7 +42,7 @@ console.log(color(`${themeemoji} CREDIT: ${wm}\n`,'magenta'))
 }
 
 async function XeonBotIncBot() {
-    	const { state, saveCreds } = await useMultiFileAuthState('auth_info_baileys')
+    	const { state, saveCreds } = await useSingleFileAuthState('session')
         const XeonBotInc = XeonBotIncConnect({
             printQRInTerminal: true,
             logger: pino({ level: 'fatal' }),
